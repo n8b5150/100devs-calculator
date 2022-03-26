@@ -50,13 +50,13 @@ main{
 section{
     padding: 5%;
 }
-#display{
+#display-container{
     margin-top: 20px;
     height: 3.5rem;
     width: 90%;
     justify-content: flex-end;
 }
-#result{
+#display{
     text-align: right;
 }
 ul{
