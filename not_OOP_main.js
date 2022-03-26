@@ -11,6 +11,7 @@ let currentArr = []
 
 //display current value
 const result = (str) => {
+    //str = str.toString().substring(0,15)
     display.innerText = str
 }
 
