@@ -15,11 +15,6 @@ const result = (str) => {
 }
 
 
-
-
-
-
-
 //when 'equals' is pressed, calculate 'total' and display
 const equals = () => {
     currentArr = current.split(' ')
@@ -119,41 +114,19 @@ const decimal = () => {
 }
 
 //add event listeners to li elements
-// document.getElementById('zero').addEventListener('click',zero)
-// document.getElementById('one').addEventListener('click',one)
-// document.getElementById('two').addEventListener('click',two)
-// document.getElementById('three').addEventListener('click',three)
-// document.getElementById('four').addEventListener('click',four)
-// document.getElementById('five').addEventListener('click',five)
-// document.getElementById('six').addEventListener('click',six)
-// document.getElementById('seven').addEventListener('click',seven)
-// document.getElementById('eight').addEventListener('click',eight)
-// document.getElementById('nine').addEventListener('click',nine)
-// document.getElementById('divide').addEventListener('click',divide)
-// document.getElementById('multiply').addEventListener('click',multiply)
-// document.getElementById('add').addEventListener('click',add)
-// document.getElementById('subtract').addEventListener('click',subtract)
-// document.getElementById('equals').addEventListener('click',equals)
-// document.getElementById('decimal').addEventListener('click',decimal)
-
-let el = document.querySelectorAll('li')
-let buttons = {}
-el.forEach( e => buttons[e.id] = document.getElementById(e.id).title )
-el.forEach( e => {
-    document.getElementById(e.id).addEventListener('click', () => {
-        
-        //this works
-        //add functionality above (decimal, equals) 
-        current+=e.innerText
-        result(current)
-    })
-})
-
-// for ( key in buttons ) {
-//     document.getElementById(key).addEventListener('click', one)
-    
-//     // () => {
-//     //     // current+=document.getElementById(key).innerText
-//     //     result(current)
-//     // })
-// }
+document.getElementById('zero').addEventListener('click',zero)
+document.getElementById('one').addEventListener('click',one)
+document.getElementById('two').addEventListener('click',two)
+document.getElementById('three').addEventListener('click',three)
+document.getElementById('four').addEventListener('click',four)
+document.getElementById('five').addEventListener('click',five)
+document.getElementById('six').addEventListener('click',six)
+document.getElementById('seven').addEventListener('click',seven)
+document.getElementById('eight').addEventListener('click',eight)
+document.getElementById('nine').addEventListener('click',nine)
+document.getElementById('divide').addEventListener('click',divide)
+document.getElementById('multiply').addEventListener('click',multiply)
+document.getElementById('add').addEventListener('click',add)
+document.getElementById('subtract').addEventListener('click',subtract)
+document.getElementById('equals').addEventListener('click',equals)
+document.getElementById('decimal').addEventListener('click',decimal)

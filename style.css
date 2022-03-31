@@ -25,12 +25,17 @@ li{
     border-radius: 10px;
     text-align: right;
 }
+#result{
+    
+}
 main{
     background-color: black;
     border-radius: 20px;
+    min-width: 360px;
 }
 #button-container{
     background-color: black;
+    border-radius: 10px;
 }
 
 /* layout */
