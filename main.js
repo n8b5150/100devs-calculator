@@ -1,74 +1,29 @@
-let current, total, result, register, currentArr, registerArr
-
-const calc = {
-    current: current,
-    total: total,
-    result: result,
-    register: register,
-    currentArr: currentArr,
-    registerArr: registerArr,
-    display: document.getElementById('display'),
-    regDisplay: document.getElementById('register-display'),
-    displayResult(){
-        //display
-    },
-    displayRegister(){
-        //register-display
-    },
-    evalCurrent(){
-
-    },
-    evalRegister(){
-
-    },
-    clear(){
-
-    },
-    addEventList(){
-        //classes: calc-button-num, calc-button-op, calc-button-eq
-        let liArr = document.querySelectorAll('li')
-        liArr.forEach( e => {
-            if ( e.className == 'calc-button-num') {
-                e.addEventListener('click',calc.num)
-            } else if ( e.className == 'calc-button-zero' ){
-                e.addEventListener('click',calc.zero)
-            } else if ( e.className == 'calc-button-op' ){
-                e.addEventListener('click',calc[e.id])
-            } else if ( e.className == 'calc-button-eq' ){
-                e.addEventListener('click',calc.equals)
-            }
-        })
-    },
-    //calc-button-op
-    replaceOp(){
-        
-    },
-    add(){
-        display.innerText = event.target.title
-    },
-    subtract(){
-        display.innerText = event.target.title
-    },
-    multiply(){
-        display.innerText = event.target.title
-    },
-    divide(){
-        display.innerText = event.target.title
-    },
-    //calc-button-eq
-    equals(){
-        display.innerText = event.target.title
-    },
-    //calc-button-num
-    num(){
-        display.innerText = event.target.title
-    },
-    //calc-button-zero
-    zero(){
-        display.innerText = event.target.title
-    },
+//accept user inputs ( number, operator, another number)
+//store inputs
+//recognize inputs and perform calculations
+//return result
 
 
-}
 
-calc.addEventList()
+//Optional
+// accept longer arithmetic operation
+// display all in put as it is being entered
+// store previous total as start of next operation
+// clear button should clear all entries
+// prevent invalid inputs (repeated decimal points, operators, start with zero, etc)
+// handle negative numbers
+// scroll with indication for numbers longer than display
+
+const keys = document.querySelector('.calculator-buttons')
+    keys.addEventListener('click', event => {
+        const {target} = event //get target from event object
+        const {value} = target //get value from target
+        if (!target.matches('button')) {
+            return
+        } else {
+            //pass to parse method
+            console.log(event)
+            console.log(event.target)
+            console.log(`${event.target.value}`)
+        }
+    })
